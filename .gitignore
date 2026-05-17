@@ -1,0 +1,15 @@
+# Architecture-specific compiled binary; rebuilt on first capture
+lib/visible-windows
+
+# Personal profile data — captured per-machine
+# If you want to sync your layouts across YOUR own machines, remove the
+# next two lines and commit your profiles. They won't be portable to
+# different display configurations though.
+profiles/*.json
+profiles/*.json.bak
+
+# Auto-generated Raycast wrappers (one per profile)
+raycast/launch-*.sh
+
+# macOS
+.DS_Store
