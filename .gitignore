@@ -11,5 +11,10 @@ profiles/*.json.bak
 # Auto-generated Raycast wrappers (one per profile)
 raycast/launch-*.sh
 
+# Raycast extension build artifacts + deps
+extension/node_modules/
+extension/dist/
+extension/.raycastrc.json
+
 # macOS
 .DS_Store

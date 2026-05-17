@@ -32,11 +32,24 @@ bash install.sh
 
 ## Usage
 
-In Raycast:
+In Raycast (Script Commands — root search):
 
-- **Layout: Capture Current** — snapshot the windows currently visible on this Space. Prompts for a profile name. Auto-creates a matching `Layout: <Name>` command.
-- **Layout: \<Name\>** — relaunch a saved layout.
-- **Layout: Teardown** — close every non-system window on the current Space.
+- **Launcher: \<Name\>** — relaunch a saved layout (one entry per profile, supports per-profile hotkeys).
+- **Launcher: Capture Current** — snapshot the windows currently visible on this Space. Prompts for a profile name. Auto-creates a matching `Launcher: <Name>` command.
+- **Launcher: Teardown** — close every non-system window on the current Space.
+- **Launcher: Delete** — remove a saved profile + its wrapper. Takes a profile name as argument.
+
+### Optional: Browse Layouts (Raycast Extension)
+
+The `extension/` subdir contains a Raycast Extension giving you a List view of all saved layouts with per-row actions (Launch, Edit JSON, Show in Finder, Delete with confirm). Install once:
+
+```bash
+cd extension
+npm install
+npm run dev   # leaves dev mode running; the extension appears in Raycast
+```
+
+Or for a persistent install: `npm run build`, then in Raycast → Settings → Extensions → Import Extension → select `extension/dist/`. After import, **Launcher → Browse Layouts** appears in root search.
 
 ## Profile Schema
 
