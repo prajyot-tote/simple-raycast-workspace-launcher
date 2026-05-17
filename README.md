@@ -45,11 +45,11 @@ The `extension/` subdir contains a Raycast Extension giving you a List view of a
 
 ```bash
 cd extension
-npm install
-npm run dev   # leaves dev mode running; the extension appears in Raycast
+pnpm install
+pnpm dev     # wait for "ready" (~5s), then Ctrl+C
 ```
 
-Or for a persistent install: `npm run build`, then in Raycast → Settings → Extensions → Import Extension → select `extension/dist/`. After import, **Launcher → Browse Layouts** appears in root search.
+`pnpm dev` is a **one-time registration step**, not a long-running dev server. After the "ready" message and Ctrl+C, the extension stays in Raycast permanently. Only re-run it when you change the extension's code.
 
 ## Profile Schema
 
