@@ -14,8 +14,9 @@ case "$1" in
   launch)   exec node "$DIR/launch.js"   "$2" ;;
   capture)  exec node "$DIR/capture.js"  "$2" ;;
   teardown) exec node "$DIR/teardown.js"      ;;
+  delete)   exec node "$DIR/delete.js"   "$2" ;;
   *)
-    echo "usage: $(basename "$0") {launch|capture|teardown} [name]" >&2
+    echo "usage: $(basename "$0") {launch|capture|teardown|delete} [name]" >&2
     exit 1
     ;;
 esac
