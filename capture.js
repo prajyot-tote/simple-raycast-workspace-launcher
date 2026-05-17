@@ -227,11 +227,11 @@ function ensureRaycastWrapper(profileName) {
   const content = `#!/bin/bash
 
 # @raycast.schemaVersion 1
-# @raycast.title Layout: ${title}
+# @raycast.title Launcher: ${title}
 # @raycast.mode silent
-# @raycast.packageName Layouts
-# @raycast.icon 🪟
-# @raycast.description Open the ${profileName} window layout
+# @raycast.packageName Launcher
+# @raycast.icon 🚀
+# @raycast.description Launch the ${profileName} workspace
 
 exec "$(dirname "$0")/_run.sh" launch ${profileName}
 `;
